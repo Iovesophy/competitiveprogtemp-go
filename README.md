@@ -9,12 +9,10 @@ package main
 
 import (
     "fmt"
-    "os"
     "github.com/Iovesophy/competitiveprogtemp-go/easy"
 )
 
 func main() {
-    os.Stdin = "test"
     e := easy.RawInput{}
     e.GetRawData()
     fmt.Println(e.RawInputList[0])
