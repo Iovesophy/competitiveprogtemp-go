@@ -16,6 +16,7 @@ var (
 func (raw *RawData) GetRawData(n int) {
 	scanner := bufio.NewScanner(os.Stdin)
 	for i := 0; i < n; i++ {
+		scanner.Scan()
 		raw.RawInputList = append(raw.RawInputList, scanner.Text())
 	}
 }
