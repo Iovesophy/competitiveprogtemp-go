@@ -13,13 +13,13 @@ var (
 	_ RawInput = (*RawData)(nil)
 )
 
-func (raw *RawData) GetRawData() {
+func (raw *RawData) GetRawData(n int) {
 	scanner := bufio.NewScanner(os.Stdin)
-	for scanner.Scan() {
+	for i := 0; i < n; i++ {
 		raw.RawInputList = append(raw.RawInputList, scanner.Text())
 	}
 }
 
 type RawInput interface {
-	GetRawData()
+	GetRawData(int)
 }
