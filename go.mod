@@ -1,3 +1,3 @@
-module github.com/Iovesophy/competitiveprogtemp
+module github.com/Iovesophy/competitiveprogtemp-go
 
 go 1.17
