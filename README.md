@@ -8,16 +8,16 @@ sample
 package main
 
 import (
-    "fmt"
-    "github.com/Iovesophy/competitiveprogtemp-go/easy"
+        "fmt"
+
+        "github.com/Iovesophy/competitiveprogtemp-go/easy"
 )
 
 func main() {
-    e := easy.RawInput{}
-    e.GetRawData()
-    fmt.Println(e.RawInputList[0])
+        e := easy.RawData{}
+        e.GetRawData(2)
+        fmt.Println(e.RawInputList)
 }
-
 ```
 
 License
